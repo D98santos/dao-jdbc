@@ -23,6 +23,11 @@ public class Program {
 		Department department = new Department(2, null);
 		List<Seller> list = sellerDao.findByDepartment(department);
 		list.forEach(x -> System.out.println(x));
+		
+		System.out.println("\n=== TEST 3: seller findAll ====");
+		
+		List<Seller> listSeller = sellerDao.findAll();
+		listSeller.forEach(x -> System.out.println(x));
 
 	}
 
